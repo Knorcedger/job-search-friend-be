@@ -8,6 +8,10 @@ var userSchema = new db.mongoose.Schema({
 	username: {type: String, required: true},
 	password: {type: String, required: true},
 	email: {type: String, unique: true, required: true, trim: true},
+	applications: [{
+		type: db.mongoose.Schema.Types.ObjectId,
+		ref: 'Application'
+	}],
 	type: {type: String, trim: true, required: true, enum: typeEnums}
 }, {
 	collection: 'users'
@@ -22,6 +26,7 @@ userSchema.statics.permissions = function() {
 		username: ['null'],
 		password: [],
 		email: ['null'],
+		applications: ['member'],
 		type: ['admin'],
 		__v: []
 	};

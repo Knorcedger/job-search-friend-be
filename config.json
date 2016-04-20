@@ -13,6 +13,7 @@
 	},
 	"databases": {
 		"local": "mongodb://localhost/test",
+		"development": "mongodb://testme:dsf84mjnsd93m5@ds013881.mlab.com:13881/heroku_hzxl5zzv",
 		"production": "mongodb://duperuser:ksbf73m4c943f@ds013991.mlab.com:13991/heroku_3hnbl0cj"
 	},
 	"users": {

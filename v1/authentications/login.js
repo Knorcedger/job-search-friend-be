@@ -73,7 +73,9 @@ function main(req, res, self) {
 			.createHash('sha256')
 			.update(req.requestData.password)
 			.digest('hex')
-	})
+	},
+	'applications'
+	)
 	.then(function(result) {
 		if (result) {
 			// we found the user, save him and lets find if a session already exists

@@ -5,7 +5,7 @@
   "author": "Knorcedger",
   "ava": {
     "files": [
-      "test"
+      "test/test-applications-add.js"
     ],
     "serial": true,
     "verbose": true
@@ -37,7 +37,7 @@
   },
   "scripts": {
     "debug": "node-inspector --no-preload",
-    "start": "nodemon --debug --watch ./ index.js",
+    "start": "DB=development nodemon --debug --watch ./ index.js",
     "test": "ava"
   }
 }

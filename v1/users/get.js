@@ -56,7 +56,7 @@ function main(req, res, self) {
 	reqlog.info('user.get');
 	var user = new User();
 
-	user.findById(req, res, req.params.id)
+	user.findById(req, res, req.params.id, 'applications')
 		.then(function(result) {
 			self.send(result);
 		});

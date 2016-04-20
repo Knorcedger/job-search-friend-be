@@ -8,7 +8,7 @@ module.exports = function(app) {
 	app.endpoint({
 		methods: ['get', 'post'],
 		url: '/users/search',
-		permissions: ['null'],
+		permissions: ['admin'],
 		middlewares: [validate],
 		callback: function(req, res) {
 			main(req, res, this);
