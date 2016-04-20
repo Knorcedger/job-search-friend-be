@@ -1,0 +1,21 @@
+{
+	"port": 2000,
+	"session": {
+		"timeout": 36000000
+	},
+	"email": "support@example.com",
+	"access": {
+		"verifyOrigin": false,
+		"apikeys": [{
+			"origin": "http://localhost:3000",
+			"key": "$-m*/;zr<L(K9Rb&"
+		}]
+	},
+	"databases": {
+		"local": "mongodb://localhost/test",
+		"production": "mongodb://duperuser:ksbf73m4c943f@ds013991.mlab.com:13991/heroku_3hnbl0cj"
+	},
+	"users": {
+		"types": ["admin", "member"]
+	}
+}
